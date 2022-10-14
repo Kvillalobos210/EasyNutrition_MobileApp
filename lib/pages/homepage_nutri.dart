@@ -1,6 +1,7 @@
 library bottom_navy_bar;
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_login_ui/pages/appointments_nutri.dart';
 import 'package:flutter_login_ui/pages/patients_list.dart';
 import 'package:sizer/sizer.dart';
 import 'package:flutter/widgets.dart';
@@ -141,14 +142,14 @@ class _HomepageNutriState extends State<HomepageNutri> {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
-                    /*
+
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => List(),
+                        builder: (context) => AppointmentNutri(),
                       ),
                     );
-                    */
+
                   },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.zero,
@@ -188,14 +189,12 @@ class _HomepageNutriState extends State<HomepageNutri> {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
-                    /*
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => List(),
+                        builder: (context) => PatientList(),
                       ),
                     );
-                    */
                   },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.zero,
@@ -235,14 +234,14 @@ class _HomepageNutriState extends State<HomepageNutri> {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
-
+/*
                     Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => PatientList(),
                       ),
                     );
-
+*/
                   },
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.zero,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_login_ui/pages/info_patient.dart';
 import 'package:sizer/sizer.dart';
 class PatientList extends StatefulWidget {
   @override
@@ -185,9 +186,286 @@ class _PatientListState extends State<PatientList> {
                                 fontSize: 16,
                                 color: Colors.black38,
                                 fontWeight: FontWeight.bold,
-                              ),)
+                              ),),
+                              SizedBox(
+                                width: 100,
+                                height: 50,
+                                child: ElevatedButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => InformationPatient(),
+                                      ),
+                                    );
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    padding: EdgeInsets.zero,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.all(Radius.circular(8.h)),
+                                    ),
+                                  ),
+                                  child: Ink(
+                                    decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [Color(0xff2BB54E), Color(0xff4EC771)],
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ),
+                                        borderRadius: BorderRadius.circular(30.0)),
+                                    child: Container(
+                                      width: 100,
+                                      height: 50,
+                                      alignment: Alignment.center,
+                                      child: const Text(
+                                        "Ver",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 17,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
 
                             ],
+
+                          ),
+
+                        )),
+
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 2.h,
+              ),
+              SizedBox(
+                height: 2.h,
+              ),
+
+              Container(
+                height: 230,
+                child: Stack(
+
+                  children: [
+                    Positioned(child: Material(
+                      child:Container(
+
+                        height: 180.0,
+                        width: 300,
+                        decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.circular(25.0),
+
+
+                        ),
+                      ) ,
+                    )),
+                    Positioned(
+                        top: 50,
+                        left: 10,
+                        child:Card(
+                          elevation: 10.0,
+                          shadowColor: Colors.grey.withOpacity(0.5),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular((30.0)),
+                          ),
+                          child:
+                          CircleAvatar(
+                            radius: 30.0,
+                            backgroundImage: NetworkImage(
+                                "https://images.unsplash.com/photo-1547721064-da6cfb341d50"),
+                            backgroundColor: Colors.green,
+                          ),
+                        )
+                    ),
+                    Positioned(
+                        top: 60,
+                        left: 120, //160
+                        child:
+                        Container(
+                          height: 150,
+                          width: 160,
+                          child: Column(
+
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Roberto Zavaleta", style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.black26,
+                                fontWeight: FontWeight.bold,
+                              ),),
+                              Divider(color: Colors.black),
+                              Text("Edad:30", style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.black38,
+                                fontWeight: FontWeight.bold,
+                              ),),
+                              SizedBox(
+                                width: 100,
+                                height: 50,
+                                child: ElevatedButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => InformationPatient(),
+                                      ),
+                                    );
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    padding: EdgeInsets.zero,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.all(Radius.circular(8.h)),
+                                    ),
+                                  ),
+                                  child: Ink(
+                                    decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [Color(0xff2BB54E), Color(0xff4EC771)],
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ),
+                                        borderRadius: BorderRadius.circular(30.0)),
+                                    child: Container(
+                                      width: 100,
+                                      height: 50,
+                                      alignment: Alignment.center,
+                                      child: const Text(
+                                        "Ver",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 17,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                            ],
+
+                          ),
+
+                        ))
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 2.h,
+              ),
+              SizedBox(
+                height: 2.h,
+              ),
+
+              Container(
+                height: 230,
+                child: Stack(
+
+                  children: [
+                    Positioned(child: Material(
+                      child:Container(
+
+                        height: 180.0,
+                        width: 300,
+                        decoration: BoxDecoration(
+                          color: Colors.green,
+                          borderRadius: BorderRadius.circular(25.0),
+
+
+                        ),
+                      ) ,
+                    )),
+                    Positioned(
+                        top: 50,
+                        left: 10,
+                        child:Card(
+                          elevation: 10.0,
+                          shadowColor: Colors.grey.withOpacity(0.5),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular((30.0)),
+                          ),
+                          child:
+                          CircleAvatar(
+                            radius: 30.0,
+                            backgroundImage: NetworkImage(
+                                "https://images.unsplash.com/photo-1547721064-da6cfb341d50"),
+                            backgroundColor: Colors.green,
+                          ),
+                        )
+                    ),
+                    Positioned(
+                        top: 60,
+                        left: 120, //160
+                        child:
+                        Container(
+                          height: 150,
+                          width: 160,
+                          child: Column(
+
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Vanessa Uriol", style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.black26,
+                                fontWeight: FontWeight.bold,
+                              ),),
+
+                              Divider(color: Colors.black),
+                              Text("Edad:30", style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.black38,
+                                fontWeight: FontWeight.bold,
+                              ),),
+                              SizedBox(
+                                width: 100,
+                                height: 50,
+                                child: ElevatedButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => InformationPatient(),
+                                      ),
+                                    );
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    padding: EdgeInsets.zero,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.all(Radius.circular(8.h)),
+                                    ),
+                                  ),
+                                  child: Ink(
+                                    decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [Color(0xff2BB54E), Color(0xff4EC771)],
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ),
+                                        borderRadius: BorderRadius.circular(30.0)),
+                                    child: Container(
+                                      width: 100,
+                                      height: 50,
+                                      alignment: Alignment.center,
+                                      child: const Text(
+                                        "Ver",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 17,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+
+                            ],
+
 
                           ),
 
@@ -259,81 +537,49 @@ class _PatientListState extends State<PatientList> {
                                 fontSize: 16,
                                 color: Colors.black38,
                                 fontWeight: FontWeight.bold,
-                              ),)
-
-                            ],
-
-                          ),
-
-                        ))
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 2.h,
-              ),
-              SizedBox(
-                height: 2.h,
-              ),
-
-              Container(
-                height: 230,
-                child: Stack(
-
-                  children: [
-                    Positioned(child: Material(
-                      child:Container(
-
-                        height: 180.0,
-                        width: 300,
-                        decoration: BoxDecoration(
-                          color: Colors.green,
-                          borderRadius: BorderRadius.circular(25.0),
-
-
-                        ),
-                      ) ,
-                    )),
-                    Positioned(
-                        top: 50,
-                        left: 10,
-                        child:Card(
-                          elevation: 10.0,
-                          shadowColor: Colors.grey.withOpacity(0.5),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular((30.0)),
-                          ),
-                          child:
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundImage: NetworkImage(
-                                "https://images.unsplash.com/photo-1547721064-da6cfb341d50"),
-                            backgroundColor: Colors.green,
-                          ),
-                        )
-                    ),
-                    Positioned(
-                        top: 60,
-                        left: 120, //160
-                        child:
-                        Container(
-                          height: 150,
-                          width: 160,
-                          child: Column(
-
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Roberto Zavaleta", style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.black26,
-                                fontWeight: FontWeight.bold,
                               ),),
-                              Divider(color: Colors.black),
-                              Text("Edad:30", style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.black38,
-                                fontWeight: FontWeight.bold,
-                              ),)
+                              SizedBox(
+                                width: 100,
+                                height: 50,
+                                child: ElevatedButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => InformationPatient(),
+                                      ),
+                                    );
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    padding: EdgeInsets.zero,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.all(Radius.circular(8.h)),
+                                    ),
+                                  ),
+                                  child: Ink(
+                                    decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [Color(0xff2BB54E), Color(0xff4EC771)],
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ),
+                                        borderRadius: BorderRadius.circular(30.0)),
+                                    child: Container(
+                                      width: 100,
+                                      height: 50,
+                                      alignment: Alignment.center,
+                                      child: const Text(
+                                        "Ver",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 17,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
 
                             ],
 
@@ -348,148 +594,6 @@ class _PatientListState extends State<PatientList> {
               ),
               SizedBox(
                 height: 2.h,
-              ),
-
-              Container(
-                height: 230,
-                child: Stack(
-
-                  children: [
-                    Positioned(child: Material(
-                      child:Container(
-
-                        height: 180.0,
-                        width: 300,
-                        decoration: BoxDecoration(
-                          color: Colors.green,
-                          borderRadius: BorderRadius.circular(25.0),
-
-
-                        ),
-                      ) ,
-                    )),
-                    Positioned(
-                        top: 50,
-                        left: 10,
-                        child:Card(
-                          elevation: 10.0,
-                          shadowColor: Colors.grey.withOpacity(0.5),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular((30.0)),
-                          ),
-                          child:
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundImage: NetworkImage(
-                                "https://images.unsplash.com/photo-1547721064-da6cfb341d50"),
-                            backgroundColor: Colors.green,
-                          ),
-                        )
-                    ),
-                    Positioned(
-                        top: 60,
-                        left: 120, //160
-                        child:
-                        Container(
-                          height: 150,
-                          width: 160,
-                          child: Column(
-
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Roberto Zavaleta", style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.black26,
-                                fontWeight: FontWeight.bold,
-                              ),),
-                              Divider(color: Colors.black),
-                              Text("Edad:30", style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.black38,
-                                fontWeight: FontWeight.bold,
-                              ),)
-
-                            ],
-
-                          ),
-
-                        ))
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 2.h,
-              ),
-              SizedBox(
-                height: 2.h,
-              ),
-
-              Container(
-                height: 230,
-                child: Stack(
-
-                  children: [
-                    Positioned(child: Material(
-                      child:Container(
-
-                        height: 180.0,
-                        width: 300,
-                        decoration: BoxDecoration(
-                          color: Colors.green,
-                          borderRadius: BorderRadius.circular(25.0),
-
-
-                        ),
-                      ) ,
-                    )),
-                    Positioned(
-                        top: 50,
-                        left: 10,
-                        child:Card(
-                          elevation: 10.0,
-                          shadowColor: Colors.grey.withOpacity(0.5),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular((30.0)),
-                          ),
-                          child:
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundImage: NetworkImage(
-                                "https://images.unsplash.com/photo-1547721064-da6cfb341d50"),
-                            backgroundColor: Colors.green,
-                          ),
-                        )
-                    ),
-                    Positioned(
-                        top: 60,
-                        left: 120, //160
-                        child:
-                        Container(
-                          height: 150,
-                          width: 160,
-                          child: Column(
-
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text("Roberto Zavaleta", style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.black26,
-                                fontWeight: FontWeight.bold,
-                              ),),
-                              Divider(color: Colors.black),
-                              Text("Edad:30", style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.black38,
-                                fontWeight: FontWeight.bold,
-                              ),)
-
-                            ],
-
-                          ),
-
-                        ))
-                  ],
-                ),
               ),
 
             ],

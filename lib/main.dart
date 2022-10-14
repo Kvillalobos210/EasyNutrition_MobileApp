@@ -20,7 +20,7 @@ class LoginUiApp extends StatelessWidget {
     {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Login UI',
+        title: 'Easy Nutrition',
         theme: ThemeData(
           primaryColor: _primaryColor,
           accentColor: _accentColor,
